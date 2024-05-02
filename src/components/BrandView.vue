@@ -1,6 +1,6 @@
 <template>
     <AppHeader />
-    <main class="container mx-auto px-4 flex pt-20 justify-center mb-44">
+    <main class="container mx-auto px-4 flex justify-center mb-44">
       <BrandGrid />
     </main>
     <AppFooter />

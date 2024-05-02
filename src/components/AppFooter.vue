@@ -1,7 +1,7 @@
 <!-- components/Footer.vue -->
 <template>
-    <footer class="footer" style="background-color: #FCA5FC;">
-      <button @click="navigateToHome" class="close-icon">(X) Close</button>
+    <footer class="footer bg-gray-800">
+      <button @click="navigateToHome" class="close-icon text-white">(X) Close</button>
     </footer>
   </template>
   
@@ -22,14 +22,12 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #f8f9fa;
     padding: 10px;
     text-align: center;
   }
   
   .close-icon {
     background-color: transparent;
-    color: #000;
     font-size: 24px;
     border: none;
     cursor: pointer;

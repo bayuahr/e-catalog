@@ -1,6 +1,6 @@
 <template>
     <AppHeader />
-    <main class="container mx-auto px-4 flex pt-20 justify-center h-screen">
+    <main class="container mx-auto px-4 flex justify-center h-screen">
       <CenteredButtons />
     </main>
     <AppFooter />

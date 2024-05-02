@@ -3,11 +3,14 @@
       <div class="container mx-auto px-4">
         <!-- Logo and Company Name -->
         <div class="flex items-center justify-center">
-          <img src="@/assets/logo.png" alt="Logo" class="h-8 w-8 mr-2"> <!-- Adjust size as needed -->
-          <span class="font-bold text-lg">Company Name</span>
+          <img src="https://asiagolf.id/wp-content/uploads/2020/02/ASIA-GOLF-LOGO-BLACK-NEW-2048x409.png" alt="Logo" class="h-8 mr-2"> <!-- Adjust size as needed -->
         </div>
       </div>
     </header>
+    <div class="mt-20 text-center">
+      <h1 class="text-2xl font-bold">ANNOUNCEMENT</h1>
+    </div>
+    
   </template>
   
   <script>
