@@ -1,6 +1,6 @@
 <template>
     <AppHeader />
-    <main class="container mx-auto px-4 flex pt-20 justify-center">
+    <main class="container mx-auto px-4 flex justify-center">
       <DetailProduct />
     </main>
     <AppFooter />

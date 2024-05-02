@@ -1,7 +1,7 @@
 <template>
     
     <div class="container mx-auto p-4">
-      <h1 class="text-xl font-bold mb-4 text-center">Brand Grid</h1>
+      <h1 class="text-xl font-bold mb-4 text-center">Brands</h1>
       <!-- Grid of category cards -->
       <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4">
         <BrandCard v-for="brand in brands" :key="brand.id" :brand="brand" />

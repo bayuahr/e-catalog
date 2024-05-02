@@ -1,8 +1,8 @@
 <template>
-  <div class="flex items-center justify-center h-full">
+  <div class="flex items-center justify-center" style="height: 70vh;">
     <div class="flex flex-row items-center">
-      <button class="button bg-blue-400" @click="navigateToListProduct(1)">Male</button>
-      <button class="button bg-orange-400" @click="navigateToListProduct(2)">Female</button>
+      <button class="button bg-blue-700" @click="navigateToListProduct(1)">Male</button>
+      <button class="button bg-red-300" @click="navigateToListProduct(2)">Female</button>
     </div>
   </div>
 </template>

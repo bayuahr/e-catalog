@@ -2,27 +2,27 @@
   <div>
     <AppHeader />
     <section
-                class="w-fit mx-auto grid grid-cols-3 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-20 mb-60"
+                class="w-fit mx-auto grid grid-cols-3 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-10 gap-x-5 mt-10 mb-20"
               >
                 <!--   ✅ Product card 1 - Starts Here 👇 -->
                 <div
-                  class="w-32 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl" @click="navigateToDetail(1)"
+                  class="w-28 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl" @click="navigateToDetail(1)"
                 >
                   <a href="#">
                     <img
                       src="https://images.unsplash.com/photo-1646753522408-077ef9839300?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NjZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                       alt="Product"
-                      class="h-52 w-32 object-cover rounded-t-xl"
+                      class="h-28 w-28 object-cover rounded-t-xl"
                     />
-                    <div class="px-4 py-3 w-32">
+                    <div class="px-2 py-3 w-28">
                       <p
-                        class="text-lg font-bold text-black truncate block capitalize"
+                        class="text-sm font-bold text-black truncate block capitalize"
                       >
                         Product Name
                       </p>
                       <div class="flex items-center">
                         <p
-                          class="text-lg font-semibold text-black cursor-auto my-3"
+                          class="text-sm font-semibold text-black cursor-auto my-3"
                         >
                           $149
                         </p>
@@ -34,23 +34,23 @@
 
                 <!--   ✅ Product card 2 - Starts Here 👇 -->
                 <div
-                  class="w-32 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl" @click="navigateToDetail(1)"
+                  class="w-28 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl" @click="navigateToDetail(1)"
                 >
                   <a href="#">
                     <img
                       src="https://images.unsplash.com/photo-1651950519238-15835722f8bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mjh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                       alt="Product"
-                      class="h-52 w-32 object-cover rounded-t-xl"
+                      class="h-28 w-28 object-cover rounded-t-xl"
                     />
-                    <div class="px-4 py-3 w-32">
+                    <div class="px-2 py-3 w-28">
                       <p
-                        class="text-lg font-bold text-black truncate block capitalize"
+                        class="text-sm font-bold text-black truncate block capitalize"
                       >
                         Product Name
                       </p>
                       <div class="flex items-center">
                         <p
-                          class="text-lg font-semibold text-black cursor-auto my-3"
+                          class="text-sm font-semibold text-black cursor-auto my-3"
                         >
                           $149
                         </p>
@@ -62,23 +62,23 @@
 
                 <!--   ✅ Product card 3 - Starts Here 👇 -->
                 <div
-                  class="w-32 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl" @click="navigateToDetail(1)"
+                  class="w-28 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl" @click="navigateToDetail(1)"
                 >
                   <a href="#">
                     <img
                       src="https://images.unsplash.com/photo-1651950537598-373e4358d320?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MjV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                       alt="Product"
-                      class="h-52 w-32 object-cover rounded-t-xl"
+                      class="h-28 w-28 object-cover rounded-t-xl"
                     />
-                    <div class="px-4 py-3 w-32">
+                    <div class="px-2 py-3 w-28">
                       <p
-                        class="text-lg font-bold text-black truncate block capitalize"
+                        class="text-sm font-bold text-black truncate block capitalize"
                       >
                         Product Name
                       </p>
                       <div class="flex items-center">
                         <p
-                          class="text-lg font-semibold text-black cursor-auto my-3"
+                          class="text-sm font-semibold text-black cursor-auto my-3"
                         >
                           $149
                         </p>
@@ -90,23 +90,23 @@
 
                 <!--   ✅ Product card 4 - Starts Here 👇 -->
                 <div
-                  class="w-32 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl" @click="navigateToDetail(1)"
+                  class="w-28 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl" @click="navigateToDetail(1)"
                 >
                   <a href="#">
                     <img
                       src="https://images.unsplash.com/photo-1651950540805-b7c71869e689?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mjl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                       alt="Product"
-                      class="h-52 w-32 object-cover rounded-t-xl"
+                      class="h-28 w-28 object-cover rounded-t-xl"
                     />
-                    <div class="px-4 py-3 w-32">
+                    <div class="px-2 py-3 w-28">
                       <p
-                        class="text-lg font-bold text-black truncate block capitalize"
+                        class="text-sm font-bold text-black truncate block capitalize"
                       >
                         Product Name
                       </p>
                       <div class="flex items-center">
                         <p
-                          class="text-lg font-semibold text-black cursor-auto my-3"
+                          class="text-sm font-semibold text-black cursor-auto my-3"
                         >
                           $149
                         </p>
@@ -118,23 +118,23 @@
 
                 <!--   ✅ Product card 5 - Starts Here 👇 -->
                 <div
-                  class="w-32 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl" @click="navigateToDetail(1)"
+                  class="w-28 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl" @click="navigateToDetail(1)"
                 >
                   <a href="#">
                     <img
                       src="https://images.unsplash.com/photo-1649261191624-ca9f79ca3fc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                       alt="Product"
-                      class="h-52 w-32 object-cover rounded-t-xl"
+                      class="h-28 w-28 object-cover rounded-t-xl"
                     />
-                    <div class="px-4 py-3 w-32">
+                    <div class="px-2 py-3 w-28">
                       <p
-                        class="text-lg font-bold text-black truncate block capitalize"
+                        class="text-sm font-bold text-black truncate block capitalize"
                       >
                         Product Name
                       </p>
                       <div class="flex items-center">
                         <p
-                          class="text-lg font-semibold text-black cursor-auto my-3"
+                          class="text-sm font-semibold text-black cursor-auto my-3"
                         >
                           $149
                         </p>
@@ -146,23 +146,23 @@
 
                 <!--   ✅ Product card 6 - Starts Here 👇 -->
                 <div
-                  class="w-32 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl" @click="navigateToDetail(1)"
+                  class="w-28 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl" @click="navigateToDetail(1)"
                 >
                   <a href="#">
                     <img
                       src="https://images.unsplash.com/photo-1649261191606-cb2496e97eee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                       alt="Product"
-                      class="h-52 w-32 object-cover rounded-t-xl"
+                      class="h-28 w-28 object-cover rounded-t-xl"
                     />
-                    <div class="px-4 py-3 w-32">
+                    <div class="px-2 py-3 w-28">
                       <p
-                        class="text-lg font-bold text-black truncate block capitalize"
+                        class="text-sm font-bold text-black truncate block capitalize"
                       >
                         Product Name
                       </p>
                       <div class="flex items-center">
                         <p
-                          class="text-lg font-semibold text-black cursor-auto my-3"
+                          class="text-sm font-semibold text-black cursor-auto my-3"
                         >
                           $149
                         </p>

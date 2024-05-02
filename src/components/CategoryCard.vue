@@ -3,9 +3,9 @@
     class="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-105"
     @click="navigateToBrand(category.id)"
   >
-    <img :src="category.image" :alt="category.name" class="w-full h-48 object-cover">
-    <div class="p-4">
-      <h2 class="text-lg font-semibold mb-2 text-center">{{ category.name }}</h2>    </div>
+    <img :src="category.image" :alt="category.name" class="w-full h-24 object-contain">
+    <div class="p-2">
+      <p class="text-sm font-semibold mb-2 text-center">{{ category.name }}</p>    </div>
   </div>
 </template>
 

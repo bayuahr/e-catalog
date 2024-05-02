@@ -6,10 +6,10 @@
     <img
       :src="brand.image"
       :alt="brand.name"
-      class="w-full h-48 object-cover"
+      class="w-full h-24 object-contain"
     />
     <div class="p-4">
-      <h2 class="text-lg font-semibold mb-2 text-center">{{ brand.name }}</h2>
+      <p class="text-sm font-semibold mb-2 text-center">{{ brand.name }}</p>
     </div>
   </div>
 </template>

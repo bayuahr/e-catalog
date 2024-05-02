@@ -1,6 +1,6 @@
 <template>
   <section
-    class="container flex-grow mx-auto mb-10 max-w-[1200px] border-b py-5 lg:grid lg:grid-cols-2 lg:py-10"
+    class="container flex-grow mx-auto mb-12 max-w-[1200px] border-b py-5 lg:grid lg:grid-cols-2 lg:py-10"
   >
     <!-- Image Gallery -->
     <div class="container mx-auto px-4">
@@ -14,7 +14,7 @@
 
         <!-- Thumbnail Container at Bottom -->
         <div
-          class="absolute bottom-0 left-0 w-full bg-white p-2 flex justify-center items-center"
+          class="absolute left-0 w-full bg-white p-2 flex justify-center items-center"
           style="gap: 10px"
         >
           <!-- Thumbnail Image -->
