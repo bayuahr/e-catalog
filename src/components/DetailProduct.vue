@@ -1,6 +1,6 @@
 <template>
   <section
-    class="container flex-grow mx-auto mb-12 max-w-[1200px] border-b py-5 lg:grid lg:grid-cols-2 lg:py-10"
+    class="container flex-grow mx-auto mb-16 max-w-[1200px] border-b py-5 lg:grid lg:grid-cols-2 lg:py-10"
   >
     <!-- Image Gallery -->
     <div class="container mx-auto px-4">
@@ -32,7 +32,7 @@
 
     <!-- Description -->
     <div class="mx-auto px-5 lg:px-5">
-      <h2 class="pt-3 text-2xl font-bold lg:pt-0">
+      <h2 class="pt-24 text-2xl font-bold lg:pt-0">
         {{ productDetailItem.title }}
       </h2>
       <p class="mt-5 font-bold">
@@ -86,7 +86,7 @@
           >{{ color }}</button>
         </div>
       </div>
-      <div class="mt-6">
+      <!-- <div class="mt-6">
         <p class="pb-2 text-xs text-gray-500">Quantity</p>
         <div class="flex">
           <button
@@ -107,7 +107,7 @@
             +
           </button>
         </div>
-      </div>
+      </div> -->
       <!-- <div class="mt-7 flex flex-row items-center gap-6">
         <button
           @click="addToCart"
