@@ -1,6 +1,6 @@
 <template>
   <section
-    class="container flex-grow mx-auto max-w-[1200px] border-b py-5 lg:grid lg:grid-cols-2 lg:py-10"
+    class="container flex-grow mx-auto mb-10 max-w-[1200px] border-b py-5 lg:grid lg:grid-cols-2 lg:py-10"
   >
     <!-- Image Gallery -->
     <div class="container mx-auto px-4">
