@@ -80,8 +80,8 @@
           <button
             v-for="color in productDetailItem.variant"
             :key="color"
-            style="background-color: cadetblue;"
-            class="h-12 w-40 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+            style="background-color: blue;"
+            class="h-12 w-40 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 text-white"
             @click="selectColor(color)"
           >{{ color }}</button>
         </div>
