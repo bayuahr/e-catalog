@@ -3,9 +3,12 @@
     class="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-105"
     @click="navigateToBrand(category.id)"
   >
-    <img :src="category.image" :alt="category.name" class="w-full h-24 object-contain">
+    <img v-if="category.image" :src="category.image" :alt="category.name" class="w-full h-24 object-contain">
+    <img v-else src="https://png.pngtree.com/png-vector/20190820/ourmid/pngtree-no-image-vector-illustration-isolated-png-image_1694547.jpg" :alt="category.name" class="w-full h-24 object-contain" >
+
+    
     <div class="p-2">
-      <p class="text-sm font-semibold mb-2 text-center">{{ category.name }}</p>    </div>
+      <p class="text-sm font-semibold mb-2 text-center" style="word-break: break-word;">{{ category.name }}</p>    </div>
   </div>
 </template>
 
@@ -20,7 +23,8 @@ export default {
   methods: {
     navigateToBrand(categoryId) {
       // Navigate to ProductDetails route with productId parameter
-      this.$router.push({ name: 'brand', params: { categoryId } });
+      localStorage.setItem('category', categoryId);
+      this.$router.push({ name: 'brand'});
     }
   }
 };

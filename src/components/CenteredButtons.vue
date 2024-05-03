@@ -13,7 +13,9 @@ export default {
   methods: {
     navigateToListProduct(gender) {
       // Navigate to ProductDetails route with productId parameter
-      this.$router.push({ name: 'ListProduct', params: { gender } });
+      localStorage.setItem('gender', gender);
+
+      this.$router.push({ name: 'ListProduct'});
     }
   }
 };

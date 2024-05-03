@@ -11,21 +11,29 @@
   
   <script>
   import BrandCard from './BrandCard.vue';
-  
+  import axios from 'axios';
   export default {
     components: {
       BrandCard
     },
     data() {
       return {
-        brands: [
-          { id: 1, name: 'Adidas', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Adidas_Logo.svg/725px-Adidas_Logo.svg.png' },
-          { id: 2, name: 'Nike', image: 'https://logos-world.net/wp-content/uploads/2020/04/Nike-Logo-1978-present.jpg' },
-          { id: 3, name: 'FlipFlop', image: 'https://cdn.vectorstock.com/i/preview-1x/17/38/stylized-pair-of-three-colored-rubber-flip-flops-vector-13361738.jpg' },
-          { id: 4, name: 'NB', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/New_Balance_logo.svg/2560px-New_Balance_logo.svg.png' },
-          // Add more brands with image URLs as needed
-        ]
+        brands:[]
       };
+    },
+    mounted(){
+      this.fetchData();
+    },
+    methods:{
+      async fetchData() {
+      try {
+        const response = await axios.get('https://wmsdev.smgdev.top/api/catalog/brand');
+        this.brands = response.data.data; // Assuming 'data' key contains array of items
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        this.loading = false; // Set loading to false in case of error
+      }
+    }
     }
   };
   </script>

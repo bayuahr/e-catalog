@@ -19,7 +19,7 @@
         >
           <!-- Thumbnail Image -->
           <img
-            v-for="(thumbnail, index) in productDetailItem.images.slice(1, 4)"
+            v-for="(thumbnail, index) in filteredThumbnails.slice(0,4)"
             :key="index + 1"
             :src="thumbnail.thumbnail"
             :alt="'Thumbnail ' + (index + 1)"
@@ -73,17 +73,21 @@
         <li>Get 100 Points</li>
       </ul>
       <div class="mt-6">
-        <h2 class="mb-2 mt-4 text-lg font-semibold text-gray-900 dark:text-white">
-        Variant:
-      </h2>
+        <h2
+          class="mb-2 mt-4 text-lg font-semibold text-gray-900 dark:text-white"
+        >
+          Variant:
+        </h2>
         <div class="flex space-x-2">
           <button
             v-for="color in productDetailItem.variant"
             :key="color"
-            style="background-color: blue;"
+            style="background-color: blue"
             class="h-12 w-40 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 text-white"
             @click="selectColor(color)"
-          >{{ color }}</button>
+          >
+            {{ color }}
+          </button>
         </div>
       </div>
       <!-- <div class="mt-6">
@@ -164,9 +168,7 @@ export default {
               "https://images.pexels.com/photos/3910071/pexels-photo-3910071.jpeg?auto=compress&cs=tinysrgb&w=600",
           },
         ],
-        variant:[
-          "Variant 1","Variant 2","Variant 3"
-        ],
+        variant: ["Variant 1", "Variant 2", "Variant 3"],
         title: "BIG ITALIAN SOFA",
         reviews: "150",
         availability: true,
@@ -185,6 +187,14 @@ export default {
       mainImage:
         "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=600",
     };
+  },
+  computed: {
+    filteredThumbnails() {
+      // Filter out thumbnails that match the main image
+      return this.productDetailItem.images.filter(
+        (thumbnail) => thumbnail !== this.mainImage
+      );
+    },
   },
   methods: {
     incrementQuantity() {

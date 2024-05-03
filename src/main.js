@@ -24,13 +24,13 @@ const routes = [{
         component: ListProduct
     },
     {
-        path: '/gender/:brandId', // Define a route with a parameter
+        path: '/gender/', // Define a route with a parameter
         name: 'gender',
         component: Gender,
         props: true
     },
     {
-        path: '/brand/:categoryId', // Define a route with a parameter
+        path: '/brand/', // Define a route with a parameter
         name: 'brand',
         component: BrandView,
         props: true

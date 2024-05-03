@@ -3,11 +3,9 @@
   <main class="container mx-auto px-4 flex pb-20 justify-center">
     <CategoryGrid />
   </main>
-  <AppFooter />
 </template>
 
 <script>
-import AppFooter from "./AppFooter.vue";
 import CategoryGrid from "./CategoryGrid.vue";
 import AppHeader from "./Header.vue"
 export default {
@@ -15,7 +13,6 @@ export default {
   components: {
     CategoryGrid,
     AppHeader,
-    AppFooter
   },
 };
 </script>
