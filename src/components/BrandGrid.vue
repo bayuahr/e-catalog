@@ -27,7 +27,7 @@
     methods:{
       async fetchData() {
       try {
-        const response = await axios.get('https://wmsdev.smgdev.top/api/catalog/brand');
+        const response = await axios.get('/api/catalog/brand');
         this.brands = response.data.data; // Assuming 'data' key contains array of items
       } catch (error) {
         console.error('Error fetching data:', error);

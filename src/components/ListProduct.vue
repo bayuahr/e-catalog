@@ -71,7 +71,7 @@ export default {
         const gender = localStorage.getItem("gender");
 
         const response = await axios.get(
-          "https://wmsdev.smgdev.top/api/catalog/product?brand_id=" +
+          "/api/catalog/product?brand_id=" +
             brand +
             "&category_id=" +
             category +

@@ -28,7 +28,7 @@ export default {
   methods: {
     async fetchData() {
       try {
-        const response = await axios.get('https://wmsdev.smgdev.top/api/catalog/category');
+        const response = await axios.get('/api/catalog/category');
         this.items = response.data.data; // Assuming 'data' key contains array of items
         this.loading = false; // Set loading to false once data is fetched
         console.log(response.data.data)
