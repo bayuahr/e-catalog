@@ -1,7 +1,7 @@
 <!-- components/Footer.vue -->
 <template>
     <footer class="footer bg-gray-800">
-      <button @click="navigateToHome" class="close-icon text-white">(X) Close</button>
+      <button @click="navigateToHome" class="text-white">Back</button>
     </footer>
   </template>
   
@@ -10,7 +10,7 @@
     methods: {
       navigateToHome() {
         // Navigate to the home page using Vue Router
-        this.$router.push({name:"home"});
+        this.$router.go(-1)
       }
     }
   };

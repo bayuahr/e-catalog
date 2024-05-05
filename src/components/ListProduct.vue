@@ -2,13 +2,13 @@
   <div>
     <AppHeader />
     <section
-      class="w-fit mx-auto grid grid-cols-3 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-10 gap-x-3 mt-10 mb-20"
+      class="w-fit mx-auto grid grid-cols-3 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-10 gap-x-3 mt-10 mb-16"
     >
       <!--   ✅ Product card 1 - Starts Here 👇 -->
       <div
         class="w-24 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
         @click="navigateToDetail(1)"
-        v-for="product in listProducts"
+        v-for="product in visibleListProducts"
         :key="product.id"
       >
         <a href="#">
@@ -39,8 +39,14 @@
           </div>
         </a>
       </div>
-      <!--   🛑 Product card 1 - Ends Here  -->
+        <!--   🛑 Product card 1 - Ends Here  -->
     </section>
+    <div v-if="loading" class="flex justify-center items-center mb-20">
+      <button @click="loadMore" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+  {{more}}
+</button>   
+    </div>
+    
   </div>
   <AppFooter />
 </template>
@@ -58,10 +64,18 @@ export default {
   data() {
     return {
       listProducts: [],
+      length: 6 ,
+      loading:false,
+      more:"Load More"
     };
   },
   mounted() {
     this.fetchData();
+  },
+  computed: {
+    visibleListProducts() {
+      return this.listProducts.slice(0, this.length)
+    }
   },
   methods: {
     async fetchData() {
@@ -80,11 +94,27 @@ export default {
         );
         this.listProducts = response.data.data; // Assuming 'data' key contains array of items
         this.loading = false; // Set loading to false once data is fetched
-        console.log(response.data.data);
+        // console.log(response.data.data);
+        this.loading=true;
       } catch (error) {
         console.error("Error fetching data:", error);
         this.loading = false; // Set loading to false in case of error
       }
+    },
+    loadMore() {
+      if (this.length > this.listProducts.length){
+        this.more="Less More";
+        this.length=6;
+        return;
+      } 
+      else{
+        this.more="Load More";
+        this.length = this.length + 3;
+        if (this.length >= this.listProducts.length){
+          this.more="Less More";
+        }
+      }
+      
     },
     navigateToDetail(productId) {
       // Navigate to ProductDetails route with productId parameter
